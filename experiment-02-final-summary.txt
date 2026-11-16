@@ -1,0 +1,38 @@
+BITCOIN RESEARCH
+EXPERIMENT 02: PROOF-OF-WORK MINING SIMULATION
+
+Status: COMPLETED
+
+Core implementation:
+1. SHA-256d hashing
+2. Nonce-based mining
+3. Difficulty target verification
+4. Binary header hash recomputation
+5. Independent Proof-of-Work verification
+6. Statistical difficulty scaling
+
+Statistical experiment:
+30 independent runs per difficulty.
+Total trials: 150
+
+Difficulty | Expected | Observed Mean
+12         | 4096    | 3931
+14         | 16384   | 12290
+16         | 65536   | 71438
+18         | 262144  | 248331
+20         | 1048576 | 991179
+
+Scientific conclusion:
+Observed mean attempts were consistent with
+the theoretical expectation E[N] = 2^d.
+
+Increasing difficulty by 2 bits increases
+expected computational work by 4 times.
+
+Limitation:
+This is an educational Proof-of-Work simulation,
+not a complete Bitcoin consensus implementation.
+
+NEXT:
+Experiment 03 - Blockchain Construction
+and Tamper Detection.

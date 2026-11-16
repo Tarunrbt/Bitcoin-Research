@@ -1,0 +1,43 @@
+BITCOIN SHA-256 RESEARCH
+Sun Nov 15 02:40:48 UTC 2026
+Python 3.14.10
+=======================================================
+BITCOIN SHA-256 RESEARCH EXPERIMENT
+=======================================================
+
+Input: 'Bitcoin'
+SHA-256: b4056df6691f8dc72e56302ddad345d65fead3ead9299609a826e2344eb63aa4
+Hash length: 64
+Output bits: 256
+
+Input: 'bitcoin'
+SHA-256: 6b88c087247aa2f07ee1c5956b8e1a9f4c7f892a70e324f1bb3d161e05ca107b
+Hash length: 64
+Output bits: 256
+
+Input: 'Bitcoin '
+SHA-256: abf91c10dbce0911fdd51352be6c1aac6bfd726a7b9fc7c7fe6b3abd1acd11cc
+Hash length: 64
+Output bits: 256
+
+Input: 'Bitcoin'
+SHA-256: b4056df6691f8dc72e56302ddad345d65fead3ead9299609a826e2344eb63aa4
+Hash length: 64
+Output bits: 256
+
+--- DETERMINISTIC TEST ---
+Same input, same hash: True
+
+--- AVALANCHE EFFECT ---
+Original input: Bitcoin
+Modified input: bitcoin
+Changed output bits: 138
+Percentage changed: 53.91 %
+
+--- DOUBLE SHA-256 TEST ---
+Single SHA-256: b4056df6691f8dc72e56302ddad345d65fead3ead9299609a826e2344eb63aa4
+Double SHA-256: 1ab3b6827ceeea24155245b11418dd6021d6f2d4e7193172f3f8dc03c650ef6f
+
+EXPERIMENT COMPLETED
+
+OPENSSL VERIFICATION
